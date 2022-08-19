@@ -1,11 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy import Table, Column, Integer, String, MetaData, Float, ForeignKey, Enum
 
-user = 'root'
-password = ''
-host = '127.0.0.1'
+user = 'sql6513783'
+password = 'YAGmMztyGf'
+host = 'sql6.freemysqlhosting.net'
 port = 3306
-database = 'dodo_classifier_demo'
+database = 'sql6513783'
 
 def get_connection():
 	return create_engine(

@@ -11,11 +11,11 @@ from flask import Flask, request
 app = Flask(__name__)
 api = Api(app)
 
-user = 'root'
-password = ''
-host = '127.0.0.1'
+user = 'sql6513783'
+password = 'YAGmMztyGf'
+host = 'sql6.freemysqlhosting.net'
 port = 3306
-database = 'dodo_classifier_demo'
+database = 'sql6513783'
 
 def get_connection():
 	return create_engine(
