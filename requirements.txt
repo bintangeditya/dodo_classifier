@@ -16,3 +16,4 @@ nltk
 Sastrawi
 pymysql
 waitress
+sklearn
