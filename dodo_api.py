@@ -7,7 +7,7 @@ import json
 import cron_website_label
 import pandas as pd
 from flask import Flask, request
-
+from waitress import serve
 app = Flask(__name__)
 api = Api(app)
 
@@ -123,4 +123,7 @@ api.add_resource(GetWebsiteBerbahaya, '/getwebsiteberbahaya')
 api.add_resource(DoCron, '/startcronjob')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
+    print("starting..")
+    #serve(app, host="0.0.0.0", port=8080)
+   # print("started.." )   
