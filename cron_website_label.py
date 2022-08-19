@@ -214,10 +214,10 @@ def do_cron(df):
     if df.shape[0] == 0 :
         return df,df_del
 
-    vect_desc = joblib.load(r'saved_model\vect_desc.pkl')
-    vect_title = joblib.load(r'saved_model\vect_title.pkl')
-    svm_desc = joblib.load(r'saved_model\SVM_desc.pkl')
-    svm_title = joblib.load(r'saved_model\SVM_title.pkl')
+    vect_desc = joblib.load('saved_model/vect_desc.pkl')
+    vect_title = joblib.load('saved_model/vect_title.pkl')
+    svm_desc = joblib.load('saved_model/SVM_desc.pkl')
+    svm_title = joblib.load('saved_model/SVM_title.pkl')
 
     X_desc = vect_desc.transform(df.description)
     X_title = vect_title.transform(df.title)
